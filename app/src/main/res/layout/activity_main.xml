@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    tools:context="apple.customedittextdemo.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/round"
+        android:hint="Corner Round"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/oval"
+        android:hint="Oval"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:background="@drawable/fillcolor"
+        android:hint="Fill Color"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:background="@drawable/round">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/noborder"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:src="@android:drawable/ic_delete" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="8dp"
+            android:hint="Search"
+            android:singleLine="true"
+            android:background="@drawable/leftroundborder"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="-1dp"
+            android:background="@drawable/rightroundcolor"
+            android:padding="2dp"
+            android:src="@android:drawable/ic_menu_search" />
+    </LinearLayout>
+</LinearLayout>
